@@ -2,6 +2,117 @@
 
 100th/s abilty power asic to cpu bridge prototype test outside still in testing
 
+If you had a true 100 TH/s of effective CPU-equivalent mining power on Monero (RandomX), here’s what that would look like realistically:
+
+
+---
+
+1. What does 100 TH/s mean for Monero?
+
+TH/s = terahashes per second = 10^12 hashes/sec
+
+Monero's RandomX algorithm doesn’t measure hashes the same as Bitcoin SHA-256.
+
+But for rough estimation, let’s convert ASIC hashes to CPU hashes.
+
+
+
+---
+
+2. Approximate Hashrate Conversion
+
+Typical CPU can do ~1000 H/s (hashes per second) on RandomX.
+
+100 TH/s = 100,000,000,000,000 H/s
+
+Dividing:
+100,000,000,000,000 H/s ÷ 1000 H/s (per CPU) = 100,000,000 virtual CPUs
+
+
+Obviously impossible in practice, but this shows the scale difference.
+
+
+---
+
+3. Realistic Estimation of Monero Earnings
+
+Current Monero network hashrate is around ~2 GH/s (2 billion H/s).
+
+Let's say you control 100 TH/s (100,000 GH/s), which is 50,000x the current network.
+
+
+At current XMR network difficulty and block reward:
+
+Average block reward ~2 XMR
+
+Blocks found every 2 minutes → ~720 blocks/day
+
+Total XMR per day ≈ 720 blocks × 2 XMR = 1440 XMR/day on the whole network
+
+
+If you had 100 TH/s (50,000x network power), you’d mine:
+
+ times the whole network
+
+
+This means more than the total daily supply, which is impossible.
+
+
+---
+
+4. What this means:
+
+Mining 100 TH/s on Monero’s RandomX is impossible due to hardware limits and design.
+
+If you somehow had it, you'd instantly dominate the entire network, making the coin useless (impractical).
+
+
+
+---
+
+5. For a Practical Estimate:
+
+If you had 1 MH/s (1 million hashes/sec) CPU mining power (already very large):
+
+Current profitability ~0.092 XMR/day per MH/s
+
+At $160/XMR → about $14.7/day per MH/s
+
+
+So for 100 TH/s → 100,000 MH/s × $14.7/day = $1.47 million per day (purely theoretical, not possible)
+
+
+---
+
+Summary:
+
+Mining Power	XMR/day (est)	USD/day (@$160)
+
+1 MH/s CPU	~0.092 XMR	~$14.7
+100 TH/s (theoretical)	9,200,000 XMR	~$1.47 billion (impractical)
+
+
+
+---
+
+Bottom line:
+
+Realistically, no CPU or emulator can give you 100 TH/s for Monero.
+
+Your earnings will be proportional to your actual CPU power and threads used.
+
+The “100 TH/s” figure in your config is a virtual simulation, not real hashrate.
+
+
+
+---
+
+If you want, I can help estimate your earnings based on your actual CPU specs and thread settings instead!
+
+
+
+
+
 
 bridge/
 ├── main.py 
