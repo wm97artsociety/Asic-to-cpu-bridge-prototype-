@@ -1,6 +1,6 @@
 # Asic-to-cpu-bridge-prototype-
 
-100th/s abilty power asic to cpu bridge prototype 
+100th/s abilty power asic to cpu bridge prototype test outside still in testing
 
 
 bridge/
