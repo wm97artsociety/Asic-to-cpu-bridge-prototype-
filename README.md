@@ -1,32 +1,76 @@
 # Asic-to-cpu-bridge-prototype-
 
 bridge/
-├── main.py                     # Entry point for your bridge miner terminal
+├── main.py 
+# Entry point for your bridge miner terminal
+
 ├── miner/
-│   ├── emulator.py             # ASIC-to-CPU emulation logic + virtual CPU power
-│   ├── execution_engine.py     # Runs mining loop, combines CPU+network power
-│   ├── memory_simulator.py     # (Optional) Memory simulation placeholder
+
+│   ├── emulator.py   
+# ASIC-to-CPU emulation logic + virtual CPU power
+
+│   ├── execution_engine.py 
+# Runs mining loop, combines CPU+network power
+
+│   ├── memory_simulator.py 
+# (Optional) Memory simulation placeholder
 │
 ├── network/
-│   ├── pool_client.py          # Connects to mining pool, fetches jobs
-│   ├── share_submitter.py      # Submits shares to mining pool
-│   └── rpc_interface.py        # (Optional) Remote control interface
+
+│   ├── pool_client.py   
+
+# Connects to mining pool, fetches jobs
+│   ├── share_submitter.py  
+
+# Submits shares to mining pool
+│   └── rpc_interface.py  
+
+# (Optional) Remote control interface
 │
+
 ├── utils/
-│   ├── logger.py               # Simple logging utility
-│   ├── diagnostics.py          # Network speed measurement & system checks
-│   └── benchmark.py            # (Optional) Performance tests
+
+│   ├── logger.py   
+
+# Simple logging utility
+│   ├── diagnostics.py  
+
+# Network speed measurement & system checks
+
+│   └── benchmark.py  
+
+# (Optional) Performance tests
 │
+
 ├── config/
-│   ├── miner_config.json       # Your miner config: pool URL, wallet, threads, etc.
-│   └── network_config.json     # Network/pool settings and API ports
+
+│   ├── miner_config.json  
+
+# Your miner config: pool URL, wallet, threads, etc.
+
+│   └── network_config.json  
+
+# Network/pool settings and API ports
 │
-├── terminal_ui.py              # Terminal UI to show mining stats and control
+
+├── terminal_ui.py    
+
+# Terminal UI to show mining stats and control
+
 │
-└── xmrig/                      # ← Add XMRig executable & files here
-    ├── xmrig.exe               # <— Add actual executable here (Windows/Linux)
-    ├── config.json             # <— XMRig config (see below)
-    └── [other DLLs/libraries]  # <— Required files from XMRig release
+└── xmrig/    
+
+# ← Add XMRig executable & files here
+    ├── xmrig.exe 
+    
+    # <— Add actual executable here (Windows/Linux)
+    
+    ├── config.json  
+    
+    # <— XMRig config (see below)
+    └── [other DLLs/libraries]
+    
+    # <— Required files from XMRig release
 
 Sure! Here's the file structure designed so that you can just add XMRig files into the setup and have your ASIC-to-CPU bridge work by forwarding jobs to XMRig and handling communication.
 
